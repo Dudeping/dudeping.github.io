@@ -1,12 +1,13 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>WX</title>
-    
-        <link rel="stylesheet" href="bootstrap.css" />
-    
+
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="layui.css">
+
     <style type="text/css">
         .son_box .bottom {
             width: 100%;
@@ -19,7 +20,7 @@
             width: 100%;
             height: 100%;
             border-radius: 100%;
-            border: 1px solid black;
+            border: 2px solid #cfcece;
         }
 
         a {
@@ -27,94 +28,534 @@
             color: black;
         }
 
-        .col-md-4{
-            margin-top:40px;
+        .col-xs-3 {
+            margin-top: 40px;
         }
 
-        .row{
-            margin: 0 40px 40px 40px;
+        .row {
+            margin: 2%;
+        }
+
+        .col-xs-12 {
+            padding: 0;
         }
     </style>
 </head>
 <body>
-
     <div class="row">
-        <div class="col-md-4">
-            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA5MjM4Mjc4OQ==&scene=124#wechat_redirect">
-                <div class="son_box">
-                    <div class="top">
-                        <img src="images/1.jpg" />
-                    </div>
-                    <div class="bottom">玉都零距离</div>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-4">
-            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIxMzE0NTE2Nw==&scene=124#wechat_redirect">
-                <div class="son_box">
-                    <div class="top">
-                        <img src="images/2.jpg" />
-                    </div>
-                    <div class="bottom">洛浦零距离</div>
-                </div>
-            </a>
+        <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+            <ul class="layui-tab-title">
+                <li class="layui-this">网络媒体</li>
+                <li>委办局</li>
+                <li>工青妇</li>
+                <li>公检法司</li>
+            </ul>
+            <!--<ul class="layui-tab-title col-xs-12">
+                <li class="layui-this col-xs-3">网络媒体</li>
+                <li class=" col-xs-3">委办局</li>
+                <li class=" col-xs-3">工青妇</li>
+                <li class=" col-xs-3">公检法司</li>
+            </ul>-->
+            <div class="layui-tab-content">
+                <div class="layui-tab-item layui-show">
+                    <div class="col-xs-12">
 
-        </div>
-        <div class="col-md-4">
-            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAxMDMwODc0MA==&scene=124#wechat_redirect">
-                <div class="son_box">
-                    <div class="top">
-                        <img src="images/3.jpg" />
-                    </div>
-                    <div class="bottom">民丰零距离</div>
-                </div>
-            </a>
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA3MTExMDY3MQ==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/和田零距离.png" />
+                                    </div>
+                                    <div class="bottom">和田零距离</div>
+                                </div>
+                            </a>
+                        </div>
 
-        </div>
-        <div class="col-md-4">
-            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAxMDMwODg1Mw==&scene=124#wechat_redirect">
-                <div class="son_box">
-                    <div class="top">
-                        <img src="images/4.jpg" />
-                    </div>
-                    <div class="bottom">策勒零距离</div>
-                </div>
-            </a>
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA5MjM4Mjc4OQ==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/玉都零距离.png" />
+                                    </div>
+                                    <div class="bottom">玉都零距离</div>
+                                </div>
+                            </a>
+                        </div>
 
-        </div>
-        <div class="col-md-4">
-            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA4MDY0ODcxNA==&scene=124#wechat_redirect">
-                <div class="son_box">
-                    <div class="top">
-                        <img src="images/5.jpg" />
-                    </div>
-                    <div class="bottom">墨玉零距离</div>
-                </div>
-            </a>
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIxMzE0NTE2Nw==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/洛浦零距离.png" />
+                                    </div>
+                                    <div class="bottom">洛浦零距离</div>
+                                </div>
+                            </a>
+                        </div>
 
-        </div>
-        <div class="col-md-4">
-            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI3OTA5MzYzNA==&scene=124#wechat_redirect">
-                <div class="son_box">
-                    <div class="top">
-                        <img src="images/6.jpg" />
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA4MDY0ODcxNA==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/墨玉零距离.png" />
+                                    </div>
+                                    <div class="bottom">墨玉零距离</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="bottom">和田县零距离</div>
-                </div>
-            </a>
 
-        </div>
-        <div class="col-md-4">
-            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA5MDc1NDA1Mg==&scene=124#wechat_redirect">
-                <div class="son_box">
-                    <div class="top">
-                        <img src="images/7.jpg" />
+                    <div class="col-xs-12">
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI3OTA5MzYzNA==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/和田县零距离.png" />
+                                    </div>
+                                    <div class="bottom">和田县零距离</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI4OTUyOTQ4OA==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/皮山教育零距离.png" />
+                                    </div>
+                                    <div class="bottom">皮山教育零距离</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAxMDc3MTM5OA==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/于田零距离.png" />
+                                    </div>
+                                    <div class="bottom">于田零距离</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAxMDMwODc0MA==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/民丰零距离.png" />
+                                    </div>
+                                    <div class="bottom">民丰零距离</div>
+                                </div>
+                            </a>
+                        </div>
+
                     </div>
-                    <div class="bottom">皮山零距离</div>
-                </div>
-            </a>
 
+
+                    <div class="col-xs-12">
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAxMDMwODg1Mw==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/策勒零距离.png" />
+                                    </div>
+                                    <div class="bottom">策勒零距离</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA5MDkxNjI1MA==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/和田零距离维吾尔语平台.png" />
+                                    </div>
+                                    <div class="bottom">和田零距离维吾尔语</div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="layui-tab-item">
+
+                    <div class="col-xs-12">
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzUyNDM2NjIyNA==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/和田纪检.png" />
+                                    </div>
+                                    <div class="bottom">和田纪检</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA3ODUzNjk0Nw==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/和田组工.png" />
+                                    </div>
+                                    <div class="bottom">和田组工</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI0MTM4NzU3MA==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/和田和谐桥.png" />
+                                    </div>
+                                    <div class="bottom">和田和谐桥</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAxNTc5MzQxMw==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/和田政务在线.png" />
+                                    </div>
+                                    <div class="bottom">和田政务在线</div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-xs-12">
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIwMzE3NjkxNQ==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/和田日报.png" />
+                                    </div>
+                                    <div class="bottom">和田日报</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI1NTE0OTY4MQ==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/和田工商.png" />
+                                    </div>
+                                    <div class="bottom">和田工商</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzUxMTA2MTAxOA==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/和田地税.png" />
+                                    </div>
+                                    <div class="bottom">和田地税</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAxOTc5OTQyMw==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/和田市教育服务公众平台.png" />
+                                    </div>
+                                    <div class="bottom">和田市教育服务公众平台</div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-xs-12">
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIxMzQ2NjU2NQ==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/和田地区广播电视台.png" />
+                                    </div>
+                                    <div class="bottom">和田地区广播电视台</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzUxNDQ0NzE5Nw==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/和田环境保护.png" />
+                                    </div>
+                                    <div class="bottom">和田环境保护</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIzOTgzMDQyMA==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/和田师范专科学校.png" />
+                                    </div>
+                                    <div class="bottom">和田师范专科学校</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIyMTQyNjU0NA==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/文明和田.png" />
+                                    </div>
+                                    <div class="bottom">文明和田</div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-xs-12">
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzUxMDExMDQzNg==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/和田网络举报.png" />
+                                    </div>
+                                    <div class="bottom">和田网络举报</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIzOTczMDI4NA==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/和田就业.png" />
+                                    </div>
+                                    <div class="bottom">和田就业</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIxMTQxNDM0OQ==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/和田人才.png" />
+                                    </div>
+                                    <div class="bottom">和田人才</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI4OTQxMjcwNA==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/和田地区人民医院.png" />
+                                    </div>
+                                    <div class="bottom">和田地区人民医院</div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-xs-12">
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI1MzI3MDUzNA==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/和田人事考试中心.png" />
+                                    </div>
+                                    <div class="bottom">和田人事考试中心</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI3MjE3ODM3NA==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/和田地区招商局.png" />
+                                    </div>
+                                    <div class="bottom">和田地区招商局</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA5MTkxMTU3NA==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/新疆和田地区图书馆.png" />
+                                    </div>
+                                    <div class="bottom">新疆和田地区图书馆</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzUyNDA0NDgwMQ==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/和田国税.png" />
+                                    </div>
+                                    <div class="bottom">和田国税</div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-xs-12">
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI0ODE5NTgyMg==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/和田统计.png" />
+                                    </div>
+                                    <div class="bottom">和田统计</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI5MjA2Njg2Mw==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/和田消防.png" />
+                                    </div>
+                                    <div class="bottom">和田消防</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIyMTI0MDEzMA==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/和田地区维吾尔医院.png" />
+                                    </div>
+                                    <div class="bottom">和田地区维吾尔医院</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI4MDE3MDYyNw==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/和田旅游指南.png" />
+                                    </div>
+                                    <div class="bottom">和田旅游指南</div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-xs-12">
+
+                        <div class="col-xs-3">
+                            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU0MzAyOTM4Mw==&scene=124#wechat_redirect">
+                                <div class="son_box">
+                                    <div class="top">
+                                        <img src="images/和田地区反邪教办.png" />
+                                    </div>
+                                    <div class="bottom">和田地区反邪教办</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="layui-tab-item">
+
+                    <div class="col-xs-3">
+                        <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA4OTQ3NzAzNA==&scene=124#wechat_redirect">
+                            <div class="son_box">
+                                <div class="top">
+                                    <img src="images/青春玉都.png" />
+                                </div>
+                                <div class="bottom">青春玉都</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="layui-tab-item">
+
+                    <div class="col-xs-3">
+                        <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI5NzE1NTMyOA==&scene=124#wechat_redirect">
+                            <div class="son_box">
+                                <div class="top">
+                                    <img src="images/和田网警巡查执法.png" />
+                                </div>
+                                <div class="bottom">和田网警巡查执法</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xs-3">
+                        <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIyOTI0Nzk3OA==&scene=124#wechat_redirect">
+                            <div class="son_box">
+                                <div class="top">
+                                    <img src="images/玉都天平.png" />
+                                </div>
+                                <div class="bottom">玉都天平</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xs-3">
+                        <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI5NzE1NTMyOA==&scene=124#wechat_redirect">
+                            <div class="son_box">
+                                <div class="top">
+                                    <img src="images/和田检察.png" />
+                                </div>
+                                <div class="bottom">和田检察</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="text-center">
+        和田地区网络信息管理办公室
+    </div>
+
+    <script src="layui.all.js"></script>
 </body>
 </html>
